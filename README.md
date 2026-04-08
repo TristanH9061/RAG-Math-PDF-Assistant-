@@ -7,6 +7,24 @@ This project implements a semantic question-answering system for mathematical do
 
 The system was designed to work with technical mathematical content, including symbolic expressions and LaTeX formatting.
 
+## System Architecture
+
+1. **Document Processing**
+   - PDF → text extraction
+   - Chunking into smaller sections
+
+2. **Embedding Layer**
+   - SentenceTransformer converts text into vectors
+
+3. **Vector Database**
+   - FAISS index for fast similarity search
+
+4. **Retrieval**
+   - Top-k relevant chunks retrieved per query
+
+5. **Generation**
+   - LLM generates answers using retrieved context
+
 ## Features
 - Upload and process mathematical PDF documents
 - Automatic document chunking and embedding generation
