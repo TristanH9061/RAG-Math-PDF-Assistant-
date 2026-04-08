@@ -13,7 +13,9 @@ The system was designed to work with technical mathematical content, including s
 - Vector similarity search using FAISS
 - Retrieval-Augmented Generation (RAG) pipeline
 - Structured responses with LaTeX-style mathematical formatting
-- Interactive interface built with Gradio
+- Context-aware answer generation using an LLM
+- Interactive UI built with Gradio
+- LaTeX-formatted math responses 
 
 ## Technologies Used
 - Python
@@ -28,6 +30,10 @@ The system was designed to work with technical mathematical content, including s
 3. Embeddings are stored in a FAISS index for fast similarity search.
 4. When a user asks a question, the system retrieves the most relevant document chunks.
 5. The retrieved context is passed to the language model to generate an answer.
+
+## Example Use Case
+Ask: "What is eigenvalue decomposition?"
+The model then retrives relevant sections from the PDF and generates a structured explanation with math formatting
 
 ## Future Improvements
 - Support for multiple PDF documents
